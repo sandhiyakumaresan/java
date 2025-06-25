@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    String s = sc.next();
+	    char ch[]=s.toCharArray();
+	    int len = s.length();
+	    int sum =0;
+	    for(int i=0;i<len;i++){
+	        if(ch[i]>='1'&& ch[i]<='9'){
+	            sum += ch[i]-'0';
+	        }
+	    }
+		System.out.print(sum);
+	}
+}
