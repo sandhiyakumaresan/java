@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc =new Scanner(System.in);
+		String s=sc.nextLine();
+		char ch[]=s.toCharArray();
+		int len = s.length();
+		String result = " ";
+	    int i=0;
+	    while(i<len){
+	        if(ch[i]=='b'){
+	            i++;
+	        }
+	        else if(i<len-1 && ch[i]=='a'&& ch[i]=='c'){
+	            i += 2;
+	        }
+	        else{
+	            result = result+ch[i];
+	            i++;
+	        }
+	    }
+	    System.out.print(result);
+	}
+}
+input :abacbjk
+output:aacjk
