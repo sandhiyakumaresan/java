@@ -1,0 +1,14 @@
+import java .util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		 String a = sc.nextLine();
+		 String b = sc.nextLine();
+		 int n1 = Integer.parseInt(a,2);
+		 int n2 = Integer.parseInt(b,2);
+		 int sum = n1+n2;
+		 String c = Integer.toBinaryString(sum);
+		 System.out.print(c);
+	}
+}
