@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 Scanner sc =new Scanner(System.in);
+	 String s =sc.next();
+	 String d =sc.next();
+	 int l1 = s.length();
+	 int l2 = d.length();
+	 if(l1!=l2){
+	     System.out.print("false");
+	 }
+	 for(int i =0;i<s.length();i++){
+	      if(s.indexOf(s.charAt(i))!=d.indexOf(d.charAt(i))){
+	          System.out.print("false");
+	          return;
+	      }
+	    }
+	    System.out.print("true");
+	}
+}
